@@ -1,15 +1,20 @@
 #!/usr/bin/python3
+"""exception for a function that prints list elements:
+
+arguments:
+    my_list: the list
+    x: the number of elements to print
+
+Return: returns the lists elements
+"""
 def safe_print_list(mylist=[], x=0):
-    try:
-        count = 0
-        for element in my_list:
-            if count < x:
-                print(element, end=" ")
-                count += 1
-            else:
-                break
-            print()
-            return count
-        except TypeError:
-            print("Error: my_list is not a valid error.")
-            return 0
+    result = 0
+    for i in range(x):
+        try:
+            print("{}".format(my_list[i], end="")
+            result += 1
+        except IndexError:
+            break
+        print("")
+        return (result)
+

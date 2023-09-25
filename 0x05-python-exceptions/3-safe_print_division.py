@@ -9,7 +9,7 @@ Return: returns the quotient
 """
 
 
-def safe_print_diviion(a, b):
+def safe_print_division(a, b):
     try:
         result = a / b
     except (ZeroDivisionError, TypeError):

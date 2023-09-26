@@ -10,6 +10,9 @@ class Square:
         Args:
         size(int): the size of the square objects
         """
+
+        self.size = size  # Use the property setter to the size
+
         @property
         def size(self):
             return self.__size

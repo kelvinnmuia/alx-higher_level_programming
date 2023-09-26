@@ -28,12 +28,12 @@ class Square:
 
     def area(self):
         """public instance method to return current area of the square"""
-        return self.__size ** 2
+        return self.__size * self.__size
 
     def my_print(self):
         """print the square with # symbol"""
+        for i in range(0, self.__size):
+            [print("#" end="") for j in range(self.__size)]
+            print("")
         if self.__size == 0:
             print("")
-        else:
-            for _ in range(self.__):
-                print("#" * self.__size)

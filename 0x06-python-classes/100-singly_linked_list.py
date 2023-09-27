@@ -27,7 +27,7 @@ class Node:
         @property
         def next_nd(self):
             """Get/set the next_nd of the Node"""
-            return (self.__next_node)
+            return (self.__next_nd)
 
         @next_node.setter
         def next_nd(self, value):

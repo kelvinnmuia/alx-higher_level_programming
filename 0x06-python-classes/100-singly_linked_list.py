@@ -1,75 +1,79 @@
 #!/usr/bin/python3
-"""singly linked list classes"""
+#!/usr/bin/python3
+"""creates class Node to define linked list node & class SinglyLinkedList"""
 
 
 class Node:
-    """representing a node in singly-linked list"""
-    def __init__(self, data, next_node=None):
-        """new node initialization
+    """defines class for singly linked list node"""
 
-        Args:
-            data (int): the new node data.
-            next_node (Node)): the next node in the linked list
-        """
+    def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
 
-        @property
-        def data(self):
-            """Get/set the nodes data"""
-            return self.__data
+    @property
+    def data(self):
+        """ getter for data attribute"""
+        return(self.__data)
 
-        @data.setter
-        def data(self, value):
-            if not isinstance(value, int):
-                raise TypeError("data must be an integer")
+    @data.setter
+    def data(self, value):
+        """setter for data attribute"""
+        if type(value) is not int:
+            raise TypeError("data must be an integer")
+        else:
             self.__data = value
 
-        @property
-        def next_node(self):
-            """Get/set the next_nd of the Node"""
-            return (self.__next_node)
+    @property
+    def next_node(self):
+        """ getter for next_node attribute"""
+        return(self.__next_node)
 
-        @next_node.setter
-        def next_node(self, value):
-            if not isinstance(value, Node) and value is not None:
-                raise TypeError("next_node must be a Node object")
+    @next_node.setter
+    def next_node(self, value):
+        """setter for next_node attribute"""
+        if value is not None and not isinstance(value, Node):
+            raise TypeError("next_node must be a Node object")
+        else:
             self.__next_node = value
 
-    class SinglyLinkedList:
-        """ representing the singly-linked list"""
-        def __init__(self):
-            """initializing the new Node in SinglyLinkedList"""
-            self.__head = None
 
-            def sorted_insert(self, value):
-                """ Inserting a new node to the linked list
+class SinglyLinkedList:
+    """defines class for singly linked list"""
 
-                node is inserted into the linked list sequentially
+    def __init__(self):
+        self.__head = None
 
-                Args:
-                    value (Node): the new node to be inserted
-                """
-        new = Node(value)
+    def sorted_insert(self, value):
+        """insert new node"""
+        new_node = Node(value)
         if self.__head is None:
-            new.next_node = None
-            self.__head = new
-        elif self.__head.data > value:
-            new.next_node = self.__head
-            self.__head = new
+            self.__head = new_node
         else:
-            temp = self.__head
-            while (temp.next_node is not None and
-                    temp.next_node.data < value):
-                temp = temp.next_node
-            new.next_node = temp.next_node
-            temp.next_node = new
+            tmp = self.__head
+            if tmp.data > new_node.data:
+                new_node.next_node = tmp
+                self.__head = new_node
+                return
+            while tmp.next_node is not None:
+                tmp2 = tmp.next_node
+                if tmp2.data < new_node.data:
+                    tmp = tmp2
+                else:
+                    new_node.next_node = tmp.next_node
+                    tmp.next_node = new_node
+                    return
+            tmp.next_node = new_node
 
-        def __str__(self):
-            """printing the SinglyLinkedList"""
-            values = []
-            temp = self.__head
-            while temp is not None:
-                values.append(str(temp.data))
-                temp = temp.next_node
-            return '\n'.join(values)
+    def stringrep(self):
+        strrep = ""
+        tmp = self.__head
+        while tmp is not None:
+            datavalue = tmp.data
+            strrep = strrep + str(datavalue)
+            tmp = tmp.next_node
+            if tmp:
+                strrep = strrep + "\n"
+        return strrep
+
+    def __repr__(self):
+        return(self.stringrep())

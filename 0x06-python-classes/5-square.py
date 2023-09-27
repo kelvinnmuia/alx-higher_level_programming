@@ -1,21 +1,20 @@
 #!/usr/bin/python3
-"""creating a Square class that defines
-    a square with new attributes"""
+"""creates class Square with
+private instance attribute size and public instance method"""
 
 
 class Square:
-    """representing the new square attributes"""
+    """defines class with instantiated and validated private instance attribute
+and public instance method."""
+
     def __init__(self, size=0):
-        """ initializing the new square"""
         self.__size = size
 
     @property
     def size(self):
-        """getter method for the new square size"""
         return(self.__size)
 
     @size.setter
-    """setter method for the new square"""
     def size(self, value):
         if type(value) is not int:
             raise TypeError("size must be an integer")
@@ -24,14 +23,14 @@ class Square:
         self.__size = value
 
     def area(self):
-        """public method to calculate current square area"""
+        """public instance method to calculate area of square"""
         return(self.__size * self.__size)
 
     def my_print(self):
-        """public method to print the square using #"""
+        """prints square of size self.__size using #"""
         if self.__size > 0:
-            for column in range(self.__size):
-                for row in range(self.__size):
+            for x in range(self.__size):
+                for y in range(self.__size):
                     print("#", end="")
                 print()
         else:

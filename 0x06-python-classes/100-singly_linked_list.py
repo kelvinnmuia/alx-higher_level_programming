@@ -26,12 +26,12 @@ class Node:
             self.__data = value
 
         @property
-        def next_nd(self):
+        def next_node(self):
             """Get/set the next_nd of the Node"""
             return (self.__next_node)
 
         @next_node.setter
-        def next_nd(self, value):
+        def next_node(self, value):
             if not isinstance(value, Node) and value is not None:
                 raise TypeError("next_node must be a Node object")
             self.__next_node = value

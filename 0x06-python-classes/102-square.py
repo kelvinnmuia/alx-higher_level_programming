@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-# 102-square.py
-# Brennan D Baraban <375@holbertonschool.com>
-"""Define a class Square."""
+"""create the new square class."""
 
 
 class Square:
-    """Represent a square."""
+    """Define the new square."""
 
     def __init__(self, size=0):
         """Initialize a new square.
@@ -17,7 +15,7 @@ class Square:
 
     @property
     def size(self):
-        """Get/set the current size of the square."""
+        """Getter method for size attribute"""
         return (self.__size)
 
     @size.setter
@@ -29,29 +27,29 @@ class Square:
         self.__size = value
 
     def area(self):
-        """Return the current area of the square."""
+        """public method to calculate current area of the square."""
         return (self.__size * self.__size)
 
-    def __eq__(self, other):
-        """Define the == comparision to a Square."""
-        return self.area() == other.area()
+    def __eq__(self, altn):
+        """equal."""
+        return self.area() == altn.area()
 
-    def __ne__(self, other):
-        """Define the != comparison to a Square."""
-        return self.area() != other.area()
+    def __ne__(self, altn):
+        """not equal to."""
+        return self.area() != altn.area()
 
-    def __lt__(self, other):
-        """Define the < comparison to a Square."""
-        return self.area() < other.area()
+    def __lt__(self, altn):
+        """less than."""
+        return self.area() < altn.area()
 
-    def __le__(self, other):
-        """Define the <= comparison to a Square."""
-        return self.area() <= other.area()
+    def __le__(self, altn):
+        """less than or equal to."""
+        return self.area() <= altn.area()
 
-    def __gt__(self, other):
-        """Define the > comparison to a Square."""
-        return self.area() > other.area()
+    def __gt__(self, altn):
+        """greater than."""
+        return self.area() > altn.area()
 
-    def __ge__(self, other):
-        """Define the >= compmarison to a Square."""
-        return self.area() >= other.area()
+    def __ge__(self, altn):
+        """greater than or equal to."""
+        return self.area() >= altn.area()

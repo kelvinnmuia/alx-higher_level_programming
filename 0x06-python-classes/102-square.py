@@ -31,7 +31,7 @@ class Square:
         return (self.__size * self.__size)
 
     def __eq__(self, altn):
-        """equal."""
+        """equal to."""
         return self.area() == altn.area()
 
     def __ne__(self, altn):

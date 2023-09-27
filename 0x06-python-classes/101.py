@@ -1,26 +1,27 @@
 #!/usr/bin/python3
 """creates class Square with
-private instance attribute size and position and
-public instance methods to calculate area and print square"""
+private attribute size position and public methods"""
+
 
 
 class Square:
-    """defines class with private instance attributes size and position
-and public instance methods to calculate area and print square."""
+    """defines class with a private attribute size
+    position and public methods"""
+
 
     def __init__(self, size=0, position=(0, 0)):
-        """instantiates attribute size to 0 and position to (0, 0)"""
+        """initializes size and position attributes to 0"""
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """get the private instance attribute size"""
+        """getter method for size attribute"""
         return(self.__size)
 
     @size.setter
     def size(self, value):
-        """sets the private instance attribute size"""
+        """setter method for size attribute"""
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -30,12 +31,12 @@ and public instance methods to calculate area and print square."""
 
     @property
     def position(self):
-        """gets the private instance attribute position"""
+        """getter method for position attribute"""
         return(self.__position)
 
     @position.setter
     def position(self, value):
-        """sets the private instance attribute position"""
+        """setter method for position attribute"""
         validate = 0
         while 1:
             if type(value) is not tuple or len(value) is not 2:
@@ -53,11 +54,11 @@ and public instance methods to calculate area and print square."""
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
-        """calculates and returns current square area"""
+        """public instance method to calculate area of square"""
         return(self.__size * self.__size)
 
     def my_print(self):
-        """prints square of size self.__size using #"""
+        """public instance method to print square using #"""
         if self.__size > 0:
             for y in range(self.__position[1]):
                 print()
@@ -71,7 +72,7 @@ and public instance methods to calculate area and print square."""
             print()
 
     def my_print_string(self):
-        """formats returnable string like my_print"""
+        """formats strings returned by my_print method"""
         sq_str = ""
         if self.__size > 0:
             for y in range(self.__position[1]):
@@ -86,5 +87,5 @@ and public instance methods to calculate area and print square."""
         return sq_str
 
     def __repr__(self):
-        """returns square representation as a string"""
+        """returns string representing the square"""
         return (self.my_print_string())

@@ -1,26 +1,26 @@
 #!/usr/bin/python3
 """creates class Square with
-private instance attribute size and position and
-public instance methods to calculate area and print square"""
+private attribute size position and public methods"""
+
 
 
 class Square:
-    """defines class with private instance attributes size and position
-and public instance methods to calculate area and print square."""
+    """defines class with a private attribute size
+    position and public methods"""
 
     def __init__(self, size=0, position=(0, 0)):
-        """instantiates attribute size to 0 and position to (0, 0)"""
+        """initializes size and position attributes to 0"""
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """get the private instance attribute size"""
+        """getter method for size attribute"""
         return(self.__size)
 
     @size.setter
     def size(self, value):
-        """sets the private instance attribute size"""
+        """setter method for size attribute"""
         if type(value) is not int:
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -29,34 +29,34 @@ and public instance methods to calculate area and print square."""
 
     @property
     def position(self):
-        """gets the private instance attribute position"""
+        """getter method for position attribute"""
         return(self.__position)
 
     @position.setter
     def position(self, value):
-        """sets the private instance attribute position"""
-        check = 0
+        """setter method for position attribute"""
+        validate = 0
         while 1:
             if type(value) is not tuple or len(value) is not 2:
-                check += 1
+                validate += 1
                 break
             if type(value[0]) is not int or type(value[1]) is not int:
-                check += 1
+                validate += 1
                 break
             if value[0] < 0 or value[1] < 0:
-                check += 1
+                validate += 1
             break
-        if check is 0:
+        if validate is 0:
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
-        """calculates and returns current square area"""
+        """public instance method to calculate area of square"""
         return(self.__size * self.__size)
 
     def my_print(self):
-        """prints square of size self.__size using #"""
+        """public instance method to print square using #"""
         if self.__size > 0:
             for y in range(self.__position[1]):
                 print()

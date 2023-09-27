@@ -8,13 +8,12 @@ arguments:
 Return: returns a function call
 """
 
-
 import sys
 
 def safe_function(fct, *args):
     try:
         reslt = fct(*args)
         return reslt
-    except Exception as e:
-        print("Exception: {}".format(str(e), file=sys.stderr)
+    except:
+        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return None

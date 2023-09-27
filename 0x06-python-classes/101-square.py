@@ -36,18 +36,18 @@ and public instance methods to calculate area and print square."""
     @position.setter
     def position(self, value):
         """sets the private instance attribute position"""
-        check = 0
+        validate = 0
         while 1:
             if type(value) is not tuple or len(value) is not 2:
-                check += 1
+                validate += 1
                 break
             if type(value[0]) is not int or type(value[1]) is not int:
-                check += 1
+                validate += 1
                 break
             if value[0] < 0 or value[1] < 0:
-                check += 1
+                validate += 1
             break
-        if check is 0:
+        if validate is 0:
             self.__position = value
         else:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -72,18 +72,18 @@ and public instance methods to calculate area and print square."""
 
     def my_print_string(self):
         """formats returnable string like my_print"""
-        square_string = ""
+        sq_str = ""
         if self.__size > 0:
             for y in range(self.__position[1]):
-                square_string = square_string + "\n"
+                sq_str = sq_str + "\n"
             for row in range(self.__size):
                 for x in range(self.__position[0]):
-                    square_string = square_string + " "
+                    sq_str = sq_str + " "
                 for column in range(self.__size):
-                    square_string = square_string + "#"
+                    sq_str = sq_str + "#"
                 if row is not (self.__size - 1):
-                    square_string = square_string + "\n"
-        return square_string
+                    sq_str = sq_str + "\n"
+        return sq_str
 
     def __repr__(self):
         """returns square representation as a string"""

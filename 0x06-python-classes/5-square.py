@@ -6,11 +6,7 @@
 class Square:
     """representing the new square attributes"""
     def __init__(self, size=0):
-        """ initializing the new square
-
-            Args:
-                size (int): the size of the new square
-        """
+        """ initializing the new square"""
         self.__size = size
 
     @property

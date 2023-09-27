@@ -71,5 +71,5 @@ class Node:
             temp = self.__head
             while temp is not None:
                 values.append(str(temp.data))
-                temp = temp.next_nd
+                temp = temp.next_node
             return ('\n'.join(values))

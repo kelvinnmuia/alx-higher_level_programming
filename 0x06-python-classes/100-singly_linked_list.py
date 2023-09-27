@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
-"""creates class Node to define linked list node & class SinglyLinkedList"""
+"""creates class Node and class SinglyLinkedList"""
 
 
 class Node:
@@ -12,12 +11,12 @@ class Node:
 
     @property
     def data(self):
-        """ getter for data attribute"""
+        """ getter method for data attribute"""
         return(self.__data)
 
     @data.setter
     def data(self, value):
-        """setter for data attribute"""
+        """setter method for data attribute"""
         if type(value) is not int:
             raise TypeError("data must be an integer")
         else:
@@ -25,12 +24,12 @@ class Node:
 
     @property
     def next_node(self):
-        """ getter for next_node attribute"""
+        """ getter method for next_node attribute"""
         return(self.__next_node)
 
     @next_node.setter
     def next_node(self, value):
-        """setter for next_node attribute"""
+        """setter method for next_node attribute"""
         if value is not None and not isinstance(value, Node):
             raise TypeError("next_node must be a Node object")
         else:
@@ -38,7 +37,7 @@ class Node:
 
 
 class SinglyLinkedList:
-    """defines class for singly linked list"""
+    """defines singly linked list class"""
 
     def __init__(self):
         self.__head = None
@@ -49,29 +48,29 @@ class SinglyLinkedList:
         if self.__head is None:
             self.__head = new_node
         else:
-            tmp = self.__head
-            if tmp.data > new_node.data:
-                new_node.next_node = tmp
+            temp = self.__head
+            if temp.data > new_node.data:
+                new_node.next_node = temp
                 self.__head = new_node
                 return
-            while tmp.next_node is not None:
-                tmp2 = tmp.next_node
-                if tmp2.data < new_node.data:
-                    tmp = tmp2
+            while temp.next_node is not None:
+                temp2 = temp.next_node
+                if temp2.data < new_node.data:
+                    temp = temp2
                 else:
-                    new_node.next_node = tmp.next_node
-                    tmp.next_node = new_node
+                    new_node.next_node = temp.next_node
+                    temp.next_node = new_node
                     return
-            tmp.next_node = new_node
+            temp.next_node = new_node
 
     def stringrep(self):
         strrep = ""
-        tmp = self.__head
-        while tmp is not None:
-            datavalue = tmp.data
+        temp = self.__head
+        while temp is not None:
+            datavalue = temp.data
             strrep = strrep + str(datavalue)
-            tmp = tmp.next_node
-            if tmp:
+            temp = temp.next_node
+            if temp:
                 strrep = strrep + "\n"
         return strrep
 

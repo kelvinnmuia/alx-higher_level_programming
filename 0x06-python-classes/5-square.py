@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 """creates class Square with
-private instance attribute size and public instance method"""
+private attribute size and public methods"""
 
 
 class Square:
-    """defines class with instantiated and validated private instance attribute
-and public instance method."""
+    """defines class with a private attribute size and public methods"""
 
     def __init__(self, size=0):
         self.__size = size
@@ -27,7 +26,7 @@ and public instance method."""
         return(self.__size * self.__size)
 
     def my_print(self):
-        """prints square of size self.__size using #"""
+        """public instance method to print square using #"""
         if self.__size > 0:
             for x in range(self.__size):
                 for y in range(self.__size):

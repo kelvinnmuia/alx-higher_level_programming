@@ -1,0 +1,58 @@
+# 2-matrix_divided.txt
+
+------------------------------
+# How to use 2-matrix_divided.py
+------------------------------ 
+
+The module defines the purpose and use of 
+``matrix_divided(matrix, div)`` function
+
+Divides a matrix with a single value number and 
+returns new matrix as an integer or float.
+
+Args:
+	matrix (list): The matrix.
+	div (int or float): The single value number
+
+Returns:
+	list: The new matrix containing quotients 
+
+Raises:
+	TypeError: If matrix is not list and matrix values and div not float or int
+
+Examples:
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 25)
+	[[0.04, 0.08, 0.12], [0.16, 0.2, 0.24]]
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 252)
+	[[0.0, 0.01, 0.01], [0.02, 0.02, 0.02]]
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 2525)
+	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6], [7, 8, 9]], -2)
+	[[-0.5, -1.0, -1.5], [-2.0, -2.5, -3.0], [-3.5, -4.0, -4.5]]
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 2.5)
+	[[0.4, 0.8, 1.2], [1.6, 2.0, 2.4], [2.8, 3.2, 3.6]]
+
+	>>> matrix_divided({2, 3, 6}, 2)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+	
+	>>> matrix_divided([["3","4", "hi"], ["3", "8", "t"]], 4)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+	>>> matrix_divided([None], 1)
+	Traceback (most recent call last):
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], 0)
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero
+
+	>>> matrix_divided([[1, 2, 3], [4, 5, 6]], "5")
+	Traceback (most recent call last):
+	TypeError: div must be a number

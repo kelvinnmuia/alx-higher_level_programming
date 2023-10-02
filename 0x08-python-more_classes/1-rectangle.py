@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """defines a class rectangle"""
+
+
 class Rectangle:
     """creates a class rectangle with attributes"""
     def __init__(self, width=0, height=0):
-        """instantiates class rectangle with optional width/height attributes"""
+        """instantiates class rectangle with optional
+        width/height attributes"""
         self.width = width
         self.height = height
 
@@ -36,4 +39,3 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self._height = value
-

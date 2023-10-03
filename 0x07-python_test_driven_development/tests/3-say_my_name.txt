@@ -1,0 +1,36 @@
+# 3-say_my_name.txt
+
+------------------------------
+# How to use 3-say_my_name.py
+------------------------------ 
+
+The module defines the purpose and use of 
+``say_my_name(first_name, last_name="")`` function
+
+Prints "My name is <first name> <last name>"
+
+Args:
+	first_name (str): The first name
+	last_name (str): Optional; The last name.default value is ""
+
+Returns:
+	str: The sentence My name is with the sunstitutes of 
+	<first name> <last name>
+
+Raises:
+	TypeError: If first_name and last_name is not str
+
+Examples:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("Daniel", "Simon")
+	My name is Daniel Simon
+
+	>>> say_my_name("Kelvin", "Johnstone")
+	My name is Kelvin Johnstone
+	
+	>>> say_my_name(1, "lst" )
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name("Jennifer", "Lopez")
+	My name is Jennifer Lopez

@@ -1,15 +1,16 @@
 #!/usr/bin/python3
 """defines a class rectangle"""
+
+
 class Rectangle:
     """creates a class rectangle with attributes"""
-    
 
     number_of_instances = 0
     print_symbol = "#"
 
-
     def __init__(self, width=0, height=0):
-        """instantiates class rectangle with optional width/height attributes"""
+        """instantiates class rectangle with
+        optional width/height attributes"""
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -45,11 +46,13 @@ class Rectangle:
             self._height = value
 
     def area(self):
-        """public instance method to compute and return area of rectangle"""
+        """public instance method to compute
+        and return area of rectangle"""
         return (self.width * self.height)
 
     def perimeter(self):
-        """public instance method to compute and return perimeter of a rectangle"""
+        """public instance method to compute
+        and return perimeter of a rectangle"""
         if self.width == 0 or self.width == 0:
             return 0
         return (2 * (self.width + self.height))

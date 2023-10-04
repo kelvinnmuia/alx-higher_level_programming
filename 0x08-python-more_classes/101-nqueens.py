@@ -50,14 +50,17 @@ def solve_nqueens(n):
 
     board = [[0 for _ in range(n)] for _ in range(n)]
 
+    def print_solution(board):
+        solution = []
+        for i in range(n):
+            for j in range(n):
+                if board[i][j] == 1:
+                    solution.append([i, j])
+            print(solution)
+
     def solve(row):
         if row == n:
-            for i in range(n):
-                for j in range(n):
-                    if board[i][j] == 1:
-                        print(f"[{i}, {j}", end=' ')
-
-            print()
+            print_solution(board)
             return
 
         for col in range(n):

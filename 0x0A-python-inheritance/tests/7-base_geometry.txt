@@ -1,0 +1,15 @@
+------------------------------
+doctest for 7-base_geometry.py
+------------------------------
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+>>> print(bg.__dict__)
+{}
+
+>>> try:
+...     bg.area()
+... except Exception as err:
+...     print(err)
+area() is not implemented

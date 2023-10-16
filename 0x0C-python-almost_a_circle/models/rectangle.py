@@ -92,7 +92,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """override __str__ with new string format"""
-        str_rp = "[Rectabgle] ({}) {}/{} - {}/{}".format(
+        str_rp = "[Rectangle] ({}) {}/{} - {}/{}".format(
             str(self.id), str(self.x), str(self.y),
             str(self.width), str(self.height))
         return (str_rp)

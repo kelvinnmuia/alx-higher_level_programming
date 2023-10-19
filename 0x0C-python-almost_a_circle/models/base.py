@@ -58,17 +58,3 @@ class Base():
             instance = cls(1, 0, 0)
         instance.update(**dictionary)
         return instance
-
-    @classmethod
-    def load_from_file(cls):
-        """return list of instances from
-        file containing saved JSON string"""
-    filename = cls.__name__ + ".json"
-    results = []
-    try:
-        with open(filename, 'r') as f:
-            for instance in cls.from_json_string(f.read()):
-                results.append(cls.create(**instance))
-    except Exception as err:
-        pass
-    return (results)

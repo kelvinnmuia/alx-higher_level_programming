@@ -68,7 +68,7 @@ class Base():
     try:
         with open(filename, 'r') as f:
             for instance in cls.from_json_string(f.read()):
-                results..append(cls.create(**instance))
+                results.append(cls.create(**instance))
     except Exception as err:
         pass
     return (results)

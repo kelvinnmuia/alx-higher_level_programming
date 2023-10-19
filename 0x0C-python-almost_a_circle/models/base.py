@@ -3,7 +3,6 @@
 import csv
 
 
-
 class Base():
     """manages the id attribute in future classes"""
     __nb_objects = 0
@@ -104,4 +103,5 @@ class Base():
 
     def to_dict(self):
         """Convert object attributes to a dictionary."""
-        return {attr: getattr(self, attr) for attr in self.__dict__ if not callable(getattr(self, attr))}
+        return {attr: getattr(self, attr) for attr in
+                self.__dict__ if not callable(getattr(self, attr))}

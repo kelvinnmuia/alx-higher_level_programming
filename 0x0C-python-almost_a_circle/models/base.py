@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """defines the Base class"""
+import csv
+
 
 
 class Base():
@@ -58,3 +60,48 @@ class Base():
             instance = cls(1, 0, 0)
         instance.update(**dictionary)
         return instance
+
+    @classmethod
+    def load_from_file(cls):
+        """return list of instances from file
+        containing saved JSON string"""
+        filename = cls.__name__ + ".json"
+        results = []
+        try:
+            with open(filename, 'r') as f:
+                for instance in cls.from_json(f.read()):
+                    results.append(cls.create(**instance))
+        except Exception as err:
+            pass
+        return (results)
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serialize and save objects to a CSV file."""
+        file_name = cls.__name__ + '.csv'
+        with open(file_name, 'w', newline='') as csvfile:
+            if list_objs:
+                fieldnames = list_objs[0].to_dict().keys()
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer.writeheader()
+                for obj in list_objs:
+                    writer.writerow(obj.to_dict())
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserialize and load objects from a CSV file."""
+        file_name = cls.__name__ + '.csv'
+        obj_list = []
+        try:
+            with open(file_name, 'r') as csvfile:
+                reader = csv.DictReader(csvfile)
+                for row in reader:
+                    obj_dict = {k: int(v) for k, v in row.items()}
+                    obj_list.append(cls.create(**obj_dict))
+            return obj_list
+        except FileNotFoundError:
+            return []
+
+    def to_dict(self):
+        """Convert object attributes to a dictionary."""
+        return {attr: getattr(self, attr) for attr in self.__dict__ if not callable(getattr(self, attr))}

@@ -1,2 +1,4 @@
 #!/usr/bin/node
-console.log(`${process.argv[2]} is ${process.argv[3]}`);
+const myArgs = process.argv.slice(2);
+const printString = myArgs[0] + ' is ' + myArgs[1];
+console.log(printString);

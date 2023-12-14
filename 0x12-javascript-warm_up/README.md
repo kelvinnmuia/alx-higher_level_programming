@@ -36,7 +36,7 @@ that prints “JavaScript is amazing”
 **2. Arguments**
   * [2-arguments.js](./2-arguments.js): JavaScript script that prints a message depending 
 of the number of arguments passed
-    * Usage: `./2-arguments.js <arg 1> <arg 2> ...<arg n>`
+    * Usage: `./2-arguments.js <arg1> <arg2> ...<arg n>`
     
     **Expected Output**
     ```
@@ -46,4 +46,35 @@ of the number of arguments passed
     Argument found
     Username@ubuntu:~/0x12$ ./2-arguments.js Best School
     Arguments found
+    ```
+
+
+**3. Value of my argument**
+  * [3-value_argument.js](./3-value_argument.js): script that prints the first argument 
+passed to it and “No argument” If no arguments are passed to the script
+    * Usage: `./3-value_argument.js <arg1>`
+
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./3-value_argument.js
+    No argument
+    Username@ubuntu:~/0x12$ ./3-value_argument.js School
+    School
+    Username@ubuntu:~/0x12$ 
+    ```
+
+**4. Create a sentence**
+  * [4-concat.js](./4-concat.js): JavaScript script that prints two arguments passed to it, 
+in the following format: “ is ”
+    * Usage: `./4-concat.js <arg1> <arg2`
+
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./4-concat.js c cool
+    c is cool
+    Username@ubuntu:~/0x12$ ./4-concat.js c 
+    c is undefined
+    Username@ubuntu:~/0x12$ ./4-concat.js
+    undefined is undefined
+    Username@ubuntu:~/0x12$
     ```

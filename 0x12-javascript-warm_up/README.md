@@ -15,3 +15,19 @@ that prints “JavaScript is amazing”
   * [1-multi_languages.js](./1-multi_languages.js): JavaScript script that prints 
 3 lines: `The first line: "C is fine"`, `The second line: "Python is cool"`,
 `The third line: "JavaScript is amazing"`
+    * Usage: `./1-multi_languages.js`
+
+**2. Arguments**
+  * [2-arguments.js](./2-arguments.js): JavaScript script that prints a message depending 
+of the number of arguments passed
+    * Usage: `./2-arguments.js <arg 1> <arg 2> ...<arg n>`
+    
+    **Expect Output**
+    ```
+    Username@ubuntu:~/0x12$ ./2-arguments.js 
+    No argument
+    Username@ubuntu:~/0x12$ ./2-arguments.js Best
+    Argument found
+    Username@ubuntu:~/0x12$ ./2-arguments.js Best School
+    Arguments found
+    ```

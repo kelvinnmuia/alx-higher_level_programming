@@ -17,12 +17,21 @@ that prints “JavaScript is amazing”
 `The third line: "JavaScript is amazing"`
     * Usage: `./1-multi_languages.js`
 
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./1-multi_languages.js
+    C is fun
+    Python is cool
+    JavaScript is amazing
+    Username@ubuntu:~/0x12$
+    ```
+
 **2. Arguments**
   * [2-arguments.js](./2-arguments.js): JavaScript script that prints a message depending 
 of the number of arguments passed
     * Usage: `./2-arguments.js <arg 1> <arg 2> ...<arg n>`
     
-    **Expect Output**
+    **Expected Output**
     ```
     Username@ubuntu:~/0x12$ ./2-arguments.js 
     No argument

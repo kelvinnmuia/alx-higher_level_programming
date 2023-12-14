@@ -97,3 +97,31 @@ an integer:
     Not a number
     Username@ubuntu:~/0x12$
     ```
+
+**6. Loop to languages**
+  * [6-multi_languages_loop.js](./6-multi_languages_loop.js): JavaScript script that prints 3 lines: 
+(like 1-multi_languages.js) but by using an array of string and a loop
+    * Usage: `./6-multi_languages_loop.js`
+
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./6-multi_languages_loop.js
+    C is fun
+    Python is cool
+    JavaScript is amazing
+    Username@ubuntu:~/0x12$
+    ```  
+
+**7. I love C**
+  * [7-multi_c.js](./7-multi_c.js): JavaScript script script that prints x times “C is fun”
+    * Usage: `./7-multi_c.js`
+
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./6-multi_languages_loop.js 2
+    C is fun
+    C is fun
+    Username@ubuntu:~/0x12$ ./7-multi_c.js
+    Missing number of occurrences
+    Username@ubuntu:~/0x12$
+    ```

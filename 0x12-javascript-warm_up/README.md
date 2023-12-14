@@ -78,3 +78,22 @@ in the following format: “ is ”
     undefined is undefined
     Username@ubuntu:~/0x12$
     ```
+
+**5. An Integer**
+  * [5-to_integer.js](./5-to_integer.js): JavaScript script that prints My number: 
+<first argument converted in integer> if the first argument can be converted to 
+an integer:
+    * Usage: `./5-to_integer.js <arg>`
+
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./5-to_integer.js
+    Not a number
+    Username@ubuntu:~/0x12$ ./5-to_integer.js 89
+    My number: 89
+    Username@ubuntu:~/0x12$ ./5-to_integer.js "89"
+    My number: 89
+    Username@ubuntu:~/0x12$ ./5-to_integer.js School
+    Not a number
+    Username@ubuntu:~/0x12$
+    ```

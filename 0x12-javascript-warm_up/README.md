@@ -11,6 +11,13 @@ to work with Node js.
 that prints “JavaScript is amazing”
     * Usage: `./0-javascript_is_amazing.js`
 
+    **Expected Output**
+    ```
+    Username@ubuntu:~/0x12$ ./0-javascript_is_amazing.js
+    JavaScript is amazing
+    Username@ubuntu:~/0x12$ 
+    ```
+
 **1. 3 languages**
   * [1-multi_languages.js](./1-multi_languages.js): JavaScript script that prints 
 3 lines: `The first line: "C is fine"`, `The second line: "Python is cool"`,

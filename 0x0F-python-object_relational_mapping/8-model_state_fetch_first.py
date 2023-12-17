@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-lists all the State objects from the state database in ascending order
-using SQLAlchemy and importing State and importing State and importing
-State and Base from model_state
+prints the first State object in the state database using SQLAlchemy
 """
 
 from sys import argv
@@ -17,9 +15,9 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    instance = session.query(State).first()
-    if instance is not None:
-        print("{}: {}".format(instance.id, instance.name))
+    ins = session.query(State).first()
+    if ins is not None:
+        print("{}: {}".format(ins.id, ins.name))
     else:
         print("Nothing")
     session.close()

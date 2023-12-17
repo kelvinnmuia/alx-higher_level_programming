@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-lists all the State objects from the state database in ascending order
-using SQLAlchemy and importing State and importing State and importing
-State and Base from model_state
+lists all the State objects from the state database containing 'a' 
 """
 
 from sys import argv

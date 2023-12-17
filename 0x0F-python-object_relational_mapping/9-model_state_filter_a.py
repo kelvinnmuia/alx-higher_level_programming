@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-lists all the State objects from the state database containing 'a' 
+lists all the State objects from the state database containing 'a'
 """
 
 from sys import argv

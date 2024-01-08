@@ -160,3 +160,83 @@ guillaume@ubuntu:~/0x10$
 
   * [6-peak.py](./6-peak.py): The peak function.
   * [6-peak.txt](./6-peak.txt): The algorithm time complexity.
+
+**7. Only status code**
+
+Write a Bash script that sends a request to a URL passed as an argument, and displays only the status code of the response.
+
+* You are not allowed to use any pipe, redirection, etc.
+* You are not allowed to use `;` and `&&`
+* You have to use `curl`
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+```
+guillaume@ubuntu:~/0x10$ ./100-status_code.sh 0.0.0.0:5000 ; echo ""
+200
+guillaume@ubuntu:~/0x10$ 
+guillaume@ubuntu:~/0x10$ ./100-status_code.sh 0.0.0.0:5000/nop ; echo ""
+404
+guillaume@ubuntu:~/0x10$ 
+```
+
+  * [100-status_code.sh](./100-status_code.sh): Bash script that sends a request to a URL, and displays only the status code of 
+the response.
+
+**8. cURL a JSON file**
+
+Write a Bash script that sends a JSON `POST` request to a URL passed as the first argument, and displays the body of the 
+response.
+
+* Your script must send a `POST` request with the contents of a file, passed with the filename as the second argument of 
+the script, in the body of the request
+* You have to use `curl`
+
+Please test your scripts in the sandbox provided, using the web server running on port 5000
+
+```
+guillaume@ubuntu:~/0x10$ cat my_json_0
+{
+    "name": "John Doe",
+    "age": 33
+}
+guillaume@ubuntu:~/0x10$ ./101-post_json.sh 0.0.0.0:5000/route_json my_json_0 ; echo ""
+Valid JSON
+guillaume@ubuntu:~/0x10$ 
+guillaume@ubuntu:~/0x10$ cat my_json_1
+I'm a JSON! really!
+guillaume@ubuntu:~/0x10$ ./101-post_json.sh 0.0.0.0:5000/route_json my_json_1 ; echo ""
+Not a valid JSON
+guillaume@ubuntu:~/0x10$ 
+guillaume@ubuntu:~/0x10$ cat my_json_2
+{
+    "name": "John Doe",
+    "age": 33,
+}
+guillaume@ubuntu:~/0x10$ ./101-post_json.sh 0.0.0.0:5000/route_json my_json_2 ; echo ""
+Not a valid JSON
+guillaume@ubuntu:~/0x10$ 
+```
+
+  * [101-post_json.sh](./101-post_json.sh): Bash script that sends a JSON `POST` request to a URL, and displays 
+the body of the response. 
+
+**9. Catch me if you can!**
+
+Write a Bash script that makes a request to 0.0.0.0:5000/catch_me that causes the server to respond with a message 
+containing You got me!, in the body of the response.
+
+* You have to use curl
+* You are not allow to use echo, cat, etc. to display the final result
+
+Please test your script in the sandbox provided, using the web server running on port 5000
+
+  * [102-catch_me.sh](./102-catch_me.sh): Bash script that makes a request to 0.0.0.0:5000/catch_me that causes the server 
+to respond with a message containing You got me!, in the body of the response.
+
+## 0x10. Python - Network #0
+* [0x10. Python - Network #0](https://drive.google.com/file/d/10YMNrqRCJODki06xw-MfnpuyOW0xcRwO/view?usp=drive_link)
+
+## Additional Project Resources
+* [HTTP (HyperText Transfer Protocol](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
+* [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)

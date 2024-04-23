@@ -447,7 +447,7 @@ guillaume@ubuntu:~/py/0x00$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFE
 0000172
 guillaume@ubuntu:~/py/0x00$ 
 ```
-  * [101-compile](./101-compile): Python scripts that compiles a python file
+  * [101-compile](./101-compile): Bash scripts that compiles a python file
 
 **13. ByteCode -> Python #1**
 

@@ -642,17 +642,3 @@ Write the Python function `def magic_calculation(a, b, c):` that does exactly th
 [tips - ByteCode](https://docs.python.org/3.4/library/dis.html)
 
   * [102-magic_calculation.py](./102-magic_calculation.py): ByteCode to python function.
-
-## 0x00. Shell, basics Quizes
-
-  * [0x01. Python - if/else, loops, functions](https://drive.google.com/file/d/18PiRPOU38pQF7Cb_wqTI3UVgBEFCFqSJ/view?usp=sharing)
-
-## Additional Project Resources
-  
-  * [More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)
-  * [IndentationError](https://www.youtube.com/watch?v=1QXOd2ZQs-Q)
-  * [How To Use String Formatters in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3)
-  * [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
-  * [Learn to Program 2 : Looping](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
-  * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)
-

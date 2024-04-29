@@ -463,3 +463,17 @@ Write the Python function `def magic_calculation(a, b):` that does exactly the s
 ```
 
   * [102-magic_calculation.py](./102-magic_calculation.py): Python function created from a bytecode.
+
+## 0x00. Python - Hello, World Quizes
+
+  * [0x00. Python - Hello, World](https://drive.google.com/file/d/1-Mx_RN5KQh1-Ng81p76YVEhEIqyDQNhK/view?usp=drive_link)
+
+## Additional Project Resources
+
+  * [The Python tutorial](https://docs.python.org/3/tutorial/index.html)
+  * [Whetting Your Appetite](https://docs.python.org/3/tutorial/appetite.html)
+  * [Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html)
+  * [An Informal Introduction to Python](https://docs.python.org/3/tutorial/introduction.html)
+  * [How To Use String Formatters in Python 3](https://realpython.com/python-f-strings/)
+  * [Learn to Program](https://www.youtube.com/playlist?list=PLGLfVvz_LVvTn3cK5e6LjhgGiSeVlIRwt)
+  * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)

@@ -160,8 +160,6 @@ guillaume@ubuntu:~/0x02$
 
   * [2-args.py](./2-args.py): Python program that prints number of arguments passed to it followed by the argument(s).
 
-```
-
 **3. Infinite addition**
 
 Write a program that prints the result of the addition of all arguments

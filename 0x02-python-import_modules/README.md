@@ -209,3 +209,44 @@ guillaume@ubuntu:~/0x02$
 ```
 
   * [4-hidden_discovery.py](./4-hidden_discovery.py): Python program that prints all the names defined by the compiled module `hidden_4.pyc`
+
+**5. Everything can be imported**
+
+Write a program that imports the variable `a` from the file `variable_load_5.py` and prints its value.
+
+  * You are not allowed to use `*` for importing or `__import__`
+  * Your code should not be executed when imported
+
+```
+guillaume@ubuntu:~/0x02$ cat variable_load_5.py
+#!/usr/bin/python3
+a = 98
+"""Simple variable
+"""
+
+guillaume@ubuntu:~/0x02$ ./5-variable_load.py
+98
+guillaume@ubuntu:~/0x02$
+```
+  * [5-variable_load.py](./5-variable_load.py): A program that imports the variable `a` from the file `variable_load_5.py`
+
+**6. Build my own calculator!**
+
+Write a program that imports all functions from the file `calculator_1.py` and handles basic operations.
+
+  * Usage: `./100-my_calculator.py a operator b`
+    * If the number of arguments is not 3, your program has to:
+       * print `Usage: ./100-my_calculator.py <a> <operator> <b>` followed with a new line
+     * exit with the value `1`
+    * `operator` can be:
+       * `+` for addition
+       * `-` for subtraction
+       * `*` for multiplication
+       * `/` for division
+    * If the operator is not one of the above:
+       * print `Unknown operator. Available operators: +, -, * and /` followed with a new line
+       * exit with the value `1`
+    * You can cast `a` and `b` into integers by using `int()` (you can assume that all arguments will be castable into integers)
+  * The result should be printed like this: `<a> <operator> <b> = <result>`, followed by a new line
+  * You are not allowed to use `*` for importing or `__import__`
+  * Your code should not be executed when imported

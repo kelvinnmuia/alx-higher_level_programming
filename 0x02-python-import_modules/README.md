@@ -235,7 +235,7 @@ Write a program that imports all functions from the file `calculator_1.py` and h
   * Usage: `./100-my_calculator.py a operator b`
     * If the number of arguments is not 3, your program has to:
        * print `Usage: ./100-my_calculator.py <a> <operator> <b>` followed with a new line
-     * exit with the value `1`
+       * exit with the value `1`
     * `operator` can be:
        * `+` for addition
        * `-` for subtraction
@@ -409,3 +409,13 @@ guillaume@ubuntu:~/0x02$
 ```
 
   * [103-fast_alphabet.py](./103-fast_alphabet.py): A python program that prints the alphabet in uppercase followed by a new line.
+
+## 0x00. Shell, basics Quizes
+
+  * [0x02. Python - import & modules](https://drive.google.com/file/d/1aqwsYa0lZemVR7ErFQFimxwBcNR5jGDf/view?usp=drive_link)
+
+## Additional Project Resources
+  
+  * [Modules](https://docs.python.org/3/tutorial/modules.html)
+  * [Command line arguments](https://docs.python.org/3/tutorial/stdlib.html#command-line-arguments)
+  * [Pycodestyle – Style Guide for Python Code](https://pypi.org/project/pycodestyle/)

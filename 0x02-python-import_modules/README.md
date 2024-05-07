@@ -410,7 +410,7 @@ guillaume@ubuntu:~/0x02$
 
   * [103-fast_alphabet.py](./103-fast_alphabet.py): A python program that prints the alphabet in uppercase followed by a new line.
 
-## 0x00. Shell, basics Quizes
+## 0x02. Python - import & modules Quizes
 
   * [0x02. Python - import & modules](https://drive.google.com/file/d/1aqwsYa0lZemVR7ErFQFimxwBcNR5jGDf/view?usp=drive_link)
 

@@ -643,7 +643,7 @@ Write the Python function `def magic_calculation(a, b, c):` that does exactly th
 
   * [102-magic_calculation.py](./102-magic_calculation.py): ByteCode to python function.
 
-## 0x00. Shell, basics Quizes
+## 0x01. Python - if/else, loops, functions Quizes
 
   * [0x01. Python - if/else, loops, functions](https://drive.google.com/file/d/18PiRPOU38pQF7Cb_wqTI3UVgBEFCFqSJ/view?usp=sharing)
 

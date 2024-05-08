@@ -552,6 +552,7 @@ carrie@ubuntu:0x03$
 ```
 
   * [13-is_palindrome.c](./13-is_palindrome.c): C function that checks whether a singly linked list is a palindrome.
+  * [lists.h](./lists.h)
 
 **14. CPython #0: Python lists**
 
@@ -636,3 +637,13 @@ julien@CPython:~/CPython$
 ```
 
   * [100-print_python_list_info.c](./100-print_python_list_info.c): C function that prints some basic info about Python lists.
+
+## 0x03. Python - Data Structures: Lists, Tuples Quizes
+
+  * [0x03. Python - Data Structures: Lists, Tuples](https://drive.google.com/file/d/1wpGPeI5Xb0_YNohVUDfMdZ0dBiRw7mGQ/view?usp=sharing)
+
+## Additional Project Resources
+  
+  * [3.1.3. Lists](https://docs.python.org/3/tutorial/introduction.html#lists)
+  * [Data structures](https://docs.python.org/3/tutorial/datastructures.html)
+  * [Learn to Program 6 : Lists](https://www.youtube.com/watch?v=A1HUzrvS-Pw)

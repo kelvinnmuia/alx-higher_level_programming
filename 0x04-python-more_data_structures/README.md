@@ -245,7 +245,7 @@ number: 89
 track: Low level
 guillaume@ubuntu:~/0x04$ 
 ```
-  * [ 7-update_dictionary.py](./ 7-update_dictionary.py): Python function that replaces or adds key/value in a dictionary.
+  * [7-update_dictionary.py](./7-update_dictionary.py): Python function that replaces or adds key/value in a dictionary.
 
 **8. Simple delete by key**
 

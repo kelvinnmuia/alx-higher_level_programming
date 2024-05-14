@@ -459,7 +459,7 @@ julien@ubuntu:~/0x07. Pyhton Strings$
 
 ## 0x07. Python - Test-driven development Quizes
 
-  * [0x07. Python - Test-driven development](https://drive.google.com/file/d/11fiP1kZbAoGbrzMtcwIx-UV2wqEnzrVm/view?usp=sharing)
+  * [0x07. Python - Test-driven development](https://drive.google.com/file/d/1PMZh5DRubW5RShvedHovFHHXoMS-d51H/view?usp=drive_link)
 
 ## Additional Project Resources
   

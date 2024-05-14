@@ -457,7 +457,7 @@ julien@ubuntu:~/0x07. Pyhton Strings$
 
   * [102-python.c](./102-python.c): C function that prints python functions.
 
-## 0x07. Python - Test-driven development Quizes
+## 0x07. Python - Test-driven development Quizes.
 
   * [0x07. Python - Test-driven development](https://drive.google.com/file/d/1PMZh5DRubW5RShvedHovFHHXoMS-d51H/view?usp=drive_link)
 

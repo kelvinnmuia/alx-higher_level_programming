@@ -570,3 +570,52 @@ guillaume@ubuntu:~/0x08$
 ```
 
   * [9-rectangle.py](./9-rectangle.py): Python class `Rectangle` that defines a rectangle by:(based on `8-rectangle.py`)
+
+**10. N queens**
+
+The N queens puzzle is the challenge of placing N non-attacking queens on an N×N chessboard. Write a program that solves the N queens problem.
+
+  * Usage: `nqueens N`
+    * If the user called the program with the wrong number of arguments, print `Usage: nqueens N`, followed by a new line, and exit with the status `1`
+  * where N must be an integer greater or equal to `4`
+    * If N is not an integer, print `N must be a number`, followed by a new line, and exit with the status `1`
+    * If N is smaller than `4`, print `N must be at least 4`, followed by a new line, and exit with the status `1`
+  * The program should print every possible solution to the problem
+    * One solution per line
+    * Format: see example
+    * You don’t have to print the solutions in a specific order
+  * You are only allowed to import the `sys` module
+
+Read: [Queen](https://en.wikipedia.org/wiki/Queen_%28chess%29), [Backtracking](https://en.wikipedia.org/wiki/Backtracking)
+
+```
+julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 4
+[[0, 1], [1, 3], [2, 0], [3, 2]]
+[[0, 2], [1, 0], [2, 3], [3, 1]]
+julien@ubuntu:~/0x08. N Queens$ ./101-nqueens.py 6
+[[0, 1], [1, 3], [2, 5], [3, 0], [4, 2], [5, 4]]
+[[0, 2], [1, 5], [2, 1], [3, 4], [4, 0], [5, 3]]
+[[0, 3], [1, 0], [2, 4], [3, 1], [4, 5], [5, 2]]
+[[0, 4], [1, 2], [2, 0], [3, 5], [4, 3], [5, 1]]
+julien@ubuntu:~/0x08. N Queens$ 
+```
+
+  * [101-nqueens.py](./101-nqueens.py): N Queens python program.
+
+## 0x08. Python - More Classes and Objects Quizes.
+
+  * [0x08. Python - More Classes and Objects](https://drive.google.com/file/d/1-xB9g_BEfyeguObn5yprEj0zaLIRirvF/view?usp=sharing)
+
+## Additional Project Resources
+  
+  * [Object Oriented Programming](https://python.swaroopch.com/oop.html) (Read everything until the paragraph “Inheritance” (excluded))
+  * [Object-Oriented Programming](https://python-course.eu/oop/object-oriented-programming.php) (Please be careful: in most of the 
+following paragraphs, the author shows the way you should not use or write a class, in order to help you better understand some concepts 
+and how everything works in Python 3. Make sure you read only the following paragraphs: “General Introduction,” “First-class Everything,” 
+“A Minimal Class in Python,” “Attributes,” “Methods,” “The `__init__` Method,” “Data Abstraction, Data Encapsulation, and Information Hiding,” 
+“`__str__`- and `__repr__`-Methods,” “Public- Protected- and Private Attributes,” & “Destructor”)
+  * [Class and Instance Attributes](https://python-course.eu/oop/class-instance-attributes.php)
+  * [classmethods and staticmethods](https://www.youtube.com/watch?v=rq8cL2XMM5M)
+  * [Properties vs. Getters and Setters](https://python-course.eu/oop/properties-vs-getters-and-setters.php)(Mainly the last part “Public instead of Private Attributes”)
+  * [str vs repr](https://shipit.dev/posts/python-str-vs-repr.html)
+

@@ -496,3 +496,82 @@ Assuming we are using a CPython implementation of Python3 with default options/c
   * [103-line1.txt](./103-line1.txt)
   * [103-line2.txt](./103-line2.txt)
 
+**32. int 2/3**
+
+```
+julien@ubuntu:/python3$ cat int.py 
+a = 1024
+b = 1024
+del a
+del b
+c = 1024
+julien@ubuntu:/python3$ 
+```
+
+Assuming we are using a CPython implementation of Python3 with default options/configuration:
+
+  * How many int objects are created by the execution of the first line of the script? (`104-line1.txt`)
+  * How many int objects are created by the execution of the second line of the script (`104-line2.txt`)
+  * After the execution of line 3, is the int object pointed by `a` deleted? Answer with `Yes` or `No` (`104-line3.txt`)
+  * After the execution of line 4, is the int object pointed by `b` deleted? Answer with `Yes` or `No` (`104-line4.txt`)
+  * How many int objects are created by the execution of the last line of the script (`104-line5.txt`)
+
+  * [104-line1.txt](./104-line1.txt)
+  * [104-line2.txt](./104-line2.txt)
+  * [104-line3.txt](./104-line3.txt)
+  * [104-line4.txt](./104-line4.txt)
+  * [104-line5.txt](./104-line5.txt)
+
+**33. int 3/3**
+
+```
+julien@twix:/tmp/so$ cat int.py 
+print("I")
+print("Love")
+print("Python")
+julien@ubuntu:/tmp/so$ 
+```
+
+Assuming we are using a CPython implementation of Python3 with default options/configuration:
+
+  * Before the execution of line 2 (`print("Love")`), how many int objects have been created and are still in memory? (`105-line1.txt`)
+  * Why? (optional blog post :))
+
+Hint: `NSMALLPOSINTS`, `NSMALLNEGINTS`
+
+  * [105-line1.txt](./105-line1.txt)
+
+**34. Clear strings**
+
+```
+guillaume@ubuntu:/python3$ cat string.py 
+a = "SCHL"
+b = "SCHL"
+del a
+del b
+c = "SCHL"
+guillaume@ubuntu:/python3$ 
+```
+Assuming we are using a CPython implementation of Python3 with default options/configuration (For answers with numbers use integers, don’t spell out the word):
+
+  * How many string objects are created by the execution of the first line of the script? (`106-line1.txt`)
+  * How many string objects are created by the execution of the second line of the script (`106-line2.txt`)
+  * After the execution of line 3, is the string object pointed by `a` deleted? Answer with `Yes` or `No` (`106-line3.txt`)
+  * After the execution of line 4, is the string object pointed by `b` deleted? Answer with `Yes` or `No` (`106-line4.txt`)
+  * How many string objects are created by the execution of the last line of the script (`106-line5.txt`)
+
+  * [106-line1.txt](./106-line1.txt)
+  * [106-line2.txt](./106-line2.txt)
+  * [106-line3.txt](./106-line3.txt)
+  * [106-line4.txt](./106-line4.txt)
+  * [106-line5.txt](./106-line5.txt)
+
+
+## Additional Project Resources
+  
+  * [9.10. Objects and values](https://www.openbookproject.net/thinkcs/python/english2e/ch09.html#objects-and-values)
+  * [9.11. Aliasing](https://www.openbookproject.net/thinkcs/python/english2e/ch09.html#aliasing)
+  * [Immutable vs mutable types](https://stackoverflow.com/questions/8056130/immutable-vs-mutable-types)
+  * [Mutation](https://www.composingprograms.com/pages/24-mutable-data.html)(Only this chapter)
+  * [9.12. Cloning lists](https://www.openbookproject.net/thinkcs/python/english2e/ch09.html#cloning-lists)
+  * [Python tuples: immutable but potentially changing](http://radar.oreilly.com/2014/10/python-tuples-immutable-but-potentially-changing.html)

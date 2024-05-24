@@ -440,6 +440,13 @@ guillaume@ubuntu:~/0x0A$
 
   * [101-add_attribute.py](./101-add_attribute.py): Python function that adds a new attribute to an object if it’s possible.
 
+## 0x0A. Python - Inheritance Quizes.
 
+  * [0x0A. Python - Inheritance](https://drive.google.com/file/d/1Xrax_uWfvRx_PeIIvFbmZTLwPgtCp3kb/view?usp=drive_link)
 
-
+## Additional Project Resources
+  
+  * [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
+  * [Multiple inheritance](https://docs.python.org/3/tutorial/classes.html#multiple-inheritance)
+  * [Inheritance in Python](https://www.geeksforgeeks.org/inheritance-in-python/)
+  * [Learn to Program 10 : Inheritance Magic Methods](https://www.youtube.com/watch?v=d8kCdLCi6Lk)

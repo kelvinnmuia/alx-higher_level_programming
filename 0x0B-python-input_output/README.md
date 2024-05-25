@@ -782,4 +782,4 @@ guillaume@ubuntu:~/0x0B$
   * [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
   * [Learn to Program 8 : Reading / Writing Files](https://www.youtube.com/watch?v=EukxMIsNeqU)
   * [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
-  * [All about py-file I/O](./https://techvidvan.com/tutorials/python-file-read-write/)
+  * [All about py-file I/O](https://techvidvan.com/tutorials/python-file-read-write/)

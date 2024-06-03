@@ -234,7 +234,7 @@ Please test your script in the sandbox provided, using the web server running on
   * [102-catch_me.sh](./102-catch_me.sh): Bash script that makes a request to 0.0.0.0:5000/catch_me that causes the server 
 to respond with a message containing You got me!, in the body of the response.
 
-## 0x10. Python - Network #0
+## 0x10. Python - Network #0 Quizes
 * [0x10. Python - Network #0](https://drive.google.com/file/d/10YMNrqRCJODki06xw-MfnpuyOW0xcRwO/view?usp=drive_link)
 
 ## Additional Project Resources

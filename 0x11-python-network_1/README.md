@@ -273,3 +273,9 @@ guillaume@ubuntu:~/0x11$
 
   * [100-github_commits.py](./100-github_commits.py): Python script that takes 2 arguments in order to find applicants that 
 have applied for backend position.
+
+## Additional Project Resources
+  
+  * [HOWTO Fetch Internet Resources Using urllib Package](https://docs.python.org/3/howto/urllib2.html)
+  * [Quickstart with Requests package](https://requests.readthedocs.io/en/latest/)
+  * [Requests package](https://pypi.org/project/requests/)

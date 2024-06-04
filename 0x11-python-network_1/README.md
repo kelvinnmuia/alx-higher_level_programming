@@ -3,7 +3,7 @@
 
 The project introduced me into `urllib`, which is the URL handling module for python. It is used to fetch 
 URLs (Uniform Resource Locators). It uses the urlopen function and is able to fetch URLs using a variety of 
-different protocols. At the end of the project I created python scripts fetches data from any given URL.
+different protocols. At the end of the project I created python scripts that fetches data from any given URL.
 
 ## Tasks :page_with_curl:
 

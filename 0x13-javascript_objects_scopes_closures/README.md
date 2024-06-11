@@ -466,3 +466,42 @@ guillaume@ubuntu:~/0x13$
 
   * [101-sorted.js](./101-sorted.js): JavaScript script that imports a dictionary of occurrences by user id and computes 
 a dictionary of user ids by occurrence.
+
+**13. Concat files**
+
+Write a script that concats 2 files.
+
+  * The first argument is the file path of the first source file
+  * The second argument is the file path of the second source file
+  * The third argument is the file path of the destination
+
+```
+guillaume@ubuntu:~/0x13$ cat fileA
+C is fun!
+guillaume@ubuntu:~/0x13$ cat fileB
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ ./102-concat.js fileA fileB fileC
+guillaume@ubuntu:~/0x13$ cat fileC
+C is fun!
+Python is Cool!!!
+guillaume@ubuntu:~/0x13$ 
+```
+
+  * [102-concat.js](./102-concat.js): JavaScript script that concats 2 files.
+
+## 0x13. JavaScript - Objects, Scopes and Closures Quizes.
+
+  * [0x13. JavaScript - Objects, Scopes and Closures](https://drive.google.com/file/d/1GdzRIw3DpX1GkBNC71-9tdXquHO9t1yU/view?usp=sharing)
+
+## Additional Project Resources
+  
+  * [JavaScript object basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+  * [Object-oriented JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+  * [Class - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+  * [super - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
+  * [extends - ES6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+  * [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+  * [Inheritance in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+  * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+  * [this/self](https://alistapart.com/article/getoutbindingsituations/)
+  * [Modern JS](https://github.com/mbeaudru/modern-js-cheatsheet)

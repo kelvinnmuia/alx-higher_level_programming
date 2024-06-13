@@ -499,3 +499,68 @@ guillaume@ubuntu:~/0x15$
 ```
 
   * [102-script.js](./102-script.js): JavaScript script that fetches and prints how to say “Hello” depending on the language.
+
+**13. And press ENTER**
+
+Write a JavaScript script that fetches and prints how to say “Hello” depending on the language
+
+  * You should use this API service: `https://www.fourtonfish.com/hellosalut/hello/`
+  * The language code will be the value entered in the tag `INPUT#language_code` (ex: `es`, `fr`, `en` etc.)
+  * The translation must be fetched when the user clicks on `INPUT#btn_translate` OR presses `ENTER` when the focus is on `INPUT#language_code`
+  * The translation of “Hello” must be displayed in the HTML tag `DIV#hello`
+  * You can’t use `document.querySelector` to select the HTML tag
+  * You must use the JQuery API
+  * You script must work when imported from the `<head>` tag
+
+Please test with this HTML file in your browser:
+
+```
+guillaume@ubuntu:~/0x15$ cat 103-main.html 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="103-script.js"></script>
+  </head>
+  <body>
+    <header> 
+      Say Hello
+    </header>
+    <br />
+    <input id="language_code" type="text" placeholder="Language code"/>
+    <input id="btn_translate" type="button" value="Translate"/>
+    <br />
+    <div id="hello"></div>
+    <br />
+    <footer>
+      Holberton School - 2017
+    </footer>
+  </body>
+</html>
+guillaume@ubuntu:~/0x15$ 
+```
+
+  * [103-script.js](./103-script.js): JavaScript script that fetches and prints how to say “Hello” depending on the language.
+
+## 0x15. JavaScript - Web jQuery Quizes.
+
+  * [0x15. JavaScript - Web jQuery]()
+
+## Additional Project Resources
+  
+  * [What is JavaScript?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+  * [Selector](https://jquery-tutorial.net/selectors/using-elements-ids-and-classes/)
+  * [Get and set content](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-content/)
+  * [Manipulate CSS classes](https://jquery-tutorial.net/dom-manipulation/getting-and-setting-css-classes/)
+  * [Manipulate DOM elements](https://jquery-tutorial.net/dom-manipulation/the-append-and-prepend-methods/#google_vignette)
+  * [API](https://oscarotero.com/jquery/)
+  * [Introduction](https://jquery-tutorial.net/ajax/introduction/)
+  * [GET & POST request](https://jquery-tutorial.net/ajax/the-get-and-post-methods/)
+  * [JQuery Ajax Tutorial #1 - Using AJAX & API’s](https://www.youtube.com/watch?v=fEYx8dQr_cQ)
+  * [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
+  * [JQuery](https://jquery.com/)
+  * [JQuery API](https://api.jquery.com/)
+  * [JQuery Ajax](https://learn.jquery.com/ajax/)
+  * [JavaScript in the browser](https://docs.google.com/document/d/1V-Hy5OKZSJkRj5IiZ4qBN3KKbMog0gUbAfddB1Uh7N4/edit?usp=sharing)
+  * [Dealing with data statically versus dynamically](https://docs.google.com/document/d/1V-Hy5OKZSJkRj5IiZ4qBN3KKbMog0gUbAfddB1Uh7N4/edit?usp=sharing)

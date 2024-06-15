@@ -50,7 +50,7 @@ The projects contained within this repository are structured to progressively bu
 
 **3. Higher-level programming - AirBnB clone**
 
-  * [0x00. AirBnB clone - The console](AirBnB_clone)
+  * [0x00. AirBnB clone - The console](https://github.com/kelvinnmuia/AirBnB_clone)
   * [0x01. AirBnB clone - Web static](./web_static)
   * [0x02. AirBnB clone - MySQL](./AirBnB_clone_v2)
   * [0x03. AirBnB clone - Deploy static](./AirBnB_clone_v2)

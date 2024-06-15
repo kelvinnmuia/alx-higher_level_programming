@@ -36,6 +36,28 @@ The projects contained within this repository are structured to progressively bu
   * [0x0C. Python - Almost a circle](./0x0C-python-almost_a_circle)
   * [0x0F. Python - Object-relational mapping](./0x0F-python-object_relational_mapping)
 
+**1. Higher-level programming - Javascript**
+
+  * [0x12. JavaScript - Warm up](./0x12-javascript-warm_up)
+  * [0x13. JavaScript - Objects, Scopes and Closures](./0x13-javascript_objects_scopes_closures)
+  * [0x14. JavaScript - Web scraping](./0x14-javascript-web_scraping)
+  * [0x15. JavaScript - Web jQuery](./0x15. JavaScript - Web jQuery)
+
+**2. Higher-level programming - Databases**
+
+  * [0x0D. SQL - Introduction](./0x0D-SQL_introduction)
+  * [0x0E. SQL - More queries](./0x0E-SQL_more_queries)
+
+**3. Higher-level programming - AirBnB clone**
+
+  * [0x00. AirBnB clone - The console](./AirBnB_clone)
+  * [0x01. AirBnB clone - Web static](./web_static)
+  * [0x02. AirBnB clone - MySQL](./AirBnB_clone_v2)
+  * [0x03. AirBnB clone - Deploy static](./AirBnB_clone_v2)
+  * [0x04. AirBnB clone - Web framework](./web_flask)
+  * [0x05. AirBnB clone - RESTful API](./AirBnB_clone_v3)
+  * [0x06. AirBnB clone - Web dynamic](./web_dynamic)
+
 Each project within this repository was an integral part of the ALX curriculum, designed to challenge and expand my technical acumen. 
 Through these projects, I have fortified my skillsets in software engineering, gaining proficiency in critical areas that are essential 
 for tackling real-world problems in the tech industry.

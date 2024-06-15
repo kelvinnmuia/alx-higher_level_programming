@@ -52,11 +52,11 @@ The projects contained within this repository are structured to progressively bu
 
   * [0x00. AirBnB clone - The console](https://github.com/kelvinnmuia/AirBnB_clone)
   * [0x01. AirBnB clone - Web static](https://github.com/kelvinnmuia/AirBnB_clone/tree/master/web_static)
-  * [0x02. AirBnB clone - MySQL](./AirBnB_clone_v2)
-  * [0x03. AirBnB clone - Deploy static](./AirBnB_clone_v2)
-  * [0x04. AirBnB clone - Web framework](./web_flask)
-  * [0x05. AirBnB clone - RESTful API](./AirBnB_clone_v3)
-  * [0x06. AirBnB clone - Web dynamic](./web_dynamic)
+  * [0x02. AirBnB clone - MySQL](https://github.com/kelvinnmuia/AirBnB_clone_v2)
+  * [0x03. AirBnB clone - Deploy static](https://github.com/kelvinnmuia/AirBnB_clone_v2)
+  * [0x04. AirBnB clone - Web framework](https://github.com/kelvinnmuia/AirBnB_clone_v2/tree/master/web_flask)
+  * [0x05. AirBnB clone - RESTful API](https://github.com/kelvinnmuia/AirBnB_clone_v3)
+  * [0x06. AirBnB clone - Web dynamic](https://github.com/kelvinnmuia/AirBnB_clone_v4/tree/master/web_dynamic)
 
 Each project within this repository was an integral part of the ALX curriculum, designed to challenge and expand my technical acumen. 
 Through these projects, I have fortified my skillsets in software engineering, gaining proficiency in critical areas that are essential 
